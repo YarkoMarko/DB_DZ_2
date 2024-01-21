@@ -21,20 +21,34 @@
 --   ('Spinach', 'Vegetable', 'Green', 23, 'Leafy green vegetable with various health benefits.');
 
 -- SELECT * FROM Stuff
--- SELECT nameOF, caloricContent FROM Stuff
--- WHERE typeOF = 'Vegetable' AND caloricContent <= 50
+
+-- SELECT typeOF, COUNT (*) as cnt
+-- FROM Stuff
+-- GROUP BY typeOF
+
+-- SELECT colour, COUNT (*)
+-- FROM Stuff
+-- WHERE colour = 'Green'
+-- GROUP BY colour
+
+-- SELECT colour, COUNT (*)
+-- FROM Stuff
+-- GROUP BY colour
+
+-- SELECT caloricContent AS Min_Cal FROM Stuff
+-- WHERE caloricContent = (SELECT MIN(caloricContent) FROM Stuff)
+
+-- SELECT caloricContent AS Max_Cal FROM Stuff
+-- WHERE caloricContent = (SELECT MAX(caloricContent) FROM Stuff)
+
+-- SELECT SUM(caloricContent) / COUNT(caloricContent) FROM Stuff
 
 -- SELECT nameOF, caloricContent FROM Stuff
--- WHERE typeOF = 'Fruit' AND caloricContent BETWEEN 80 AND 110
+-- WHERE typeOF = 'Fruit'
+-- ORDER BY caloricContent
+-- LIMIT 1
 
--- SELECT nameOF FROM Stuff
--- WHERE typeOF = 'Vegetable' AND nameOF LIKE '%c%' OR nameOF LIKE '%C%'
-
--- SELECT nameOF, typeOF, description FROM Stuff
--- WHERE description LIKE '%and%'
-
--- UPDATE Stuff SET colour = 'Green' WHERE nameOF = 'Apple'
-
--- SELECT nameOF, typeOF, colour FROM Stuff
--- WHERE colour = 'Yellow' OR colour = 'Green'
-
+-- SELECT nameOF, caloricContent FROM Stuff
+-- WHERE typeOF = 'Fruit'
+-- ORDER BY caloricContent DESC
+-- LIMIT 1
