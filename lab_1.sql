@@ -20,4 +20,21 @@
 --   ('Grapes', 'Fruit', 'Purple', 69, 'Small and delicious grapes.'),
 --   ('Spinach', 'Vegetable', 'Green', 23, 'Leafy green vegetable with various health benefits.');
 
-SELECT * FROM Stuff
+-- SELECT * FROM Stuff
+-- SELECT nameOF, caloricContent FROM Stuff
+-- WHERE typeOF = 'Vegetable' AND caloricContent <= 50
+
+-- SELECT nameOF, caloricContent FROM Stuff
+-- WHERE typeOF = 'Fruit' AND caloricContent BETWEEN 80 AND 110
+
+-- SELECT nameOF FROM Stuff
+-- WHERE typeOF = 'Vegetable' AND nameOF LIKE '%c%' OR nameOF LIKE '%C%'
+
+-- SELECT nameOF, typeOF, description FROM Stuff
+-- WHERE description LIKE '%and%'
+
+-- UPDATE Stuff SET colour = 'Green' WHERE nameOF = 'Apple'
+
+-- SELECT nameOF, typeOF, colour FROM Stuff
+-- WHERE colour = 'Yellow' OR colour = 'Green'
+
